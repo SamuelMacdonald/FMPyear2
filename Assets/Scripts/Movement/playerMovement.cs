@@ -40,6 +40,7 @@ public class playerMovement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, WhatIsGround);
 
         MyInput();
+        SpeedControl();
 
         if (grounded)
         {
@@ -61,13 +62,17 @@ public class playerMovement : MonoBehaviour
 
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        
+    }
+
+    private void SpeedControl()
+    {
+        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+        if(flatVel.magnitude > moveSpeed)
         {
-            readyToJump = false;
-
-            Jump();
-
-            Invoke(nameof(RestJump), jumpCooldown);
+            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
 
@@ -75,9 +80,10 @@ public class playerMovement : MonoBehaviour
     {
         moveDirection = orientation.forward * verticalInput + orientation.right *horizontalInput;
 
-        if(grounded)
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
+        if (grounded)
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        }
         else if (!grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMulti, ForceMode.Force);
