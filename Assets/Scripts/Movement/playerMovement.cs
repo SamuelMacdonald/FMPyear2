@@ -62,6 +62,15 @@ public class playerMovement : MonoBehaviour
 
         verticalInput = Input.GetAxisRaw("Vertical");
 
+        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(RestJump), jumpCooldown);
+        }
+
         
     }
 
