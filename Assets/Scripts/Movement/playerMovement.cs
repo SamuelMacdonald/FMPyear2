@@ -10,15 +10,16 @@ public class playerMovement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMulti;
-    bool readyToJump;
+    public bool readyToJump;
 
     [Header("KeyBinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode SprintKey = KeyCode.LeftShift;
 
     [Header("GroundCheck")]
     public float playerHeight;
     public LayerMask WhatIsGround;
-    bool grounded;
+    public bool grounded;
 
     public Transform orientation;
 
@@ -33,6 +34,7 @@ public class playerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        readyToJump = true;
     }
 
     private void Update()
@@ -50,6 +52,8 @@ public class playerMovement : MonoBehaviour
         {
             rb.linearDamping = 0;
         }
+
+     
     }
 
     private void FixedUpdate()
