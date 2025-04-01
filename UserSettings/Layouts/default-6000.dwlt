@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 941
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -530,8 +530,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 640
+    x: 0
+    y: 585
     width: 1465
     height: 354
   m_SerializedDataModeController:
@@ -575,21 +575,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 50}
     m_SelectedIDs: b2dd0000
     m_LastClickedID: 56754
-    m_ExpandedIDs: 00000000f8b100004ab400004cb4000042ce0000acdd0000aedd000000ca9a3b
+    m_ExpandedIDs: 000000003cb300003eb3000040b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Materials
-      m_OriginalName: Materials
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 46426
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 5}
@@ -604,7 +604,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f8b10000
+    m_ExpandedIDs: 000000003cb300003eb3000040b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -683,8 +683,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 3386
-    y: 79
+    x: 1467
+    y: 24
     width: 453
     height: 915
   m_SerializedDataModeController:
@@ -732,8 +732,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 79
+    x: 0
+    y: 24
     width: 362
     height: 535
   m_SerializedDataModeController:
@@ -755,18 +755,18 @@ MonoBehaviour:
       m_ExpandedIDs: dee6ffff4cf6fffff6faffffcab00000d4b00000e6b00000eeb0000042b1000056b1000080b10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Area Past
-        m_OriginalName: Area Past
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 45294
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 4}
@@ -798,8 +798,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2283
-    y: 79
+    x: 364
+    y: 24
     width: 1101
     height: 535
   m_SerializedDataModeController:
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.20950454, y: -0.18533522, z: 0.03973664, w: -0.95964366}
     speed: 2
-    m_Value: {x: -0.20948683, y: -0.18382789, z: 0.039407834, w: -0.9595675}
+    m_Value: {x: -0.20950454, y: -0.1853352, z: 0.03973664, w: -0.95964366}
   m_Size:
     m_Target: 13.421942
     speed: 2
