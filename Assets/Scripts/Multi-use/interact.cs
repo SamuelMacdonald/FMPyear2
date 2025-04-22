@@ -9,7 +9,9 @@ public abstract class interact : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            
+            interactableUI.gameObject.SetActive(true);
+            LeanTween.cancel(interactableUI.gameObject);
+            LeanTween.alphaCanvas(interactableUI, 1, 1);
             playerWithinRange = true;
         }
     }
@@ -24,9 +26,9 @@ public abstract class interact : MonoBehaviour
 
     public virtual void Activate()
     {
-
+        interactableUI.gameObject.SetActive(false);
     }
-    public void deactivate()
+    public virtual void Deactivate()
     {
 
     }
@@ -36,6 +38,13 @@ public abstract class interact : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             playerWithinRange = false;
+            LeanTween.alphaCanvas(interactableUI, 0, 1);
+            //.setOnComplete(UIHide());
         }
+    }
+
+    private void UIHide()
+    {
+       return; 
     }
 }
