@@ -7,6 +7,11 @@ public class playerCutscene : MonoBehaviour
     [SerializeField] private ThirdPerson TPC;
     [SerializeField] private GameObject Player;
 
+    //cutscene
+    public GameObject FPC;
+    public GameObject CSC;
+    public GameObject CSPC;
+
     private void Awake()
     {
         instance = this;

@@ -13,6 +13,7 @@ public abstract class interact : MonoBehaviour
             LeanTween.cancel(interactableUI.gameObject);
             LeanTween.alphaCanvas(interactableUI, 1, 1);
             playerWithinRange = true;
+            Debug.Log("Player is here");
         }
     }
 

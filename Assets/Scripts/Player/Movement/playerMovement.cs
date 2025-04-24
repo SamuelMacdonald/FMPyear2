@@ -19,6 +19,8 @@ public class playerMovement : MonoBehaviour
     public bool notIdel;
     public bool inAir;
 
+    
+
 
     [Header("KeyBinds")]
     public KeyCode jumpKey = KeyCode.Space;
