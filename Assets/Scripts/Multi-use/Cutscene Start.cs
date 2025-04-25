@@ -21,6 +21,7 @@ public class CutsceneStart : interact
     public override void Deactivate()
     {
         base.Deactivate();
+        cutscenePlay.SetActive(false);
         playerCutscene.instance.CSC.SetActive(false);
         playerCutscene.instance.FPC.SetActive(true);
 
