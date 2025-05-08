@@ -377,8 +377,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Timeline\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 730
+    x: 0
+    y: 667
     width: 1413
     height: 248
   m_SerializedDataModeController:
@@ -399,7 +399,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_SequenceHierarchy: {fileID: 0}
   m_SequencePath:
-    m_SelectionRoot: 155834
+    m_SelectionRoot: 0
     m_SubElements: []
 --- !u!114 &15
 MonoBehaviour:
@@ -584,8 +584,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 347
-    y: 87
+    x: 340
+    y: 24
     width: 1073
     height: 617
   m_SerializedDataModeController:
@@ -729,21 +729,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 9cbd0000
     m_LastClickedID: 48540
-    m_ExpandedIDs: 0000000014bb000016bb000018bb00001abb00001cbb00001ebb000020bb000022bb000024bb000026bb000028bb00002abb00002cbb00002ebb000096bd00009abd0000b4bd0000bcbd0000c2bd0000c6bd0000b29c0100ce9c010036a1010038a1010000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Resources
-      m_OriginalName: Resources
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 48590
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 6}
@@ -758,7 +758,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000012bb000014bb000016bb000018bb00001abb00001cbb00001ebb000020bb000022bb000024bb000026bb000028bb00002abb00002cbb00002ebb0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -837,8 +837,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1422
-    y: 87
+    x: 1415
+    y: 24
     width: 489
     height: 891
   m_SerializedDataModeController:
@@ -886,8 +886,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 87
+    x: 0
+    y: 24
     width: 338
     height: 617
   m_SerializedDataModeController:
@@ -904,23 +904,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac62fbff
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 1ab1fbff66d6fbff82d6fbff8673fcff2877fcffcc77fcff5878fcffa27afcff4ac1fcfff486fdff9887fdff2488fdfff44cfeffca5dfeff62e4feff90d7ffff0eefffffdefafffffafafffffc9801001e99010068990100d2990100449a0100989a01007eb80100ba600200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 'bottomCutSceneBar '
-        m_OriginalName: 'bottomCutSceneBar '
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -272808
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 5}
@@ -1616,11 +1616,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.010807781, y: -0.91554695, z: -0.022778282, w: -0.40222502}
     speed: 2
-    m_Value: {x: 0.010770118, y: -0.9158531, z: -0.022787098, w: -0.40072164}
+    m_Value: {x: -0.010807781, y: 0.915547, z: 0.022778282, w: 0.40222502}
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 70.71068
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
