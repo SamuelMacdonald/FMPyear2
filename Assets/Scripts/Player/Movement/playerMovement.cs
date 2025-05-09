@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ public class playerMovement : MonoBehaviour
     public bool notIdel;
     public bool inAir;
 
+    //Score/Points
+    public int obj;
+    public ScoreManger SM;
     
 
 
@@ -42,6 +46,7 @@ public class playerMovement : MonoBehaviour
 
     private void Start()
     {
+        
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         readyToJump = true;
@@ -162,4 +167,15 @@ public class playerMovement : MonoBehaviour
     {
         readyToJump = true;
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Object")
+        {
+            obj++;
+            other.gameObject.SetActive(false);
+            Debug.Log("Hit");
+        }
+    }
+
+    
 }
