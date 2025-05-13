@@ -1,4 +1,8 @@
 using UnityEngine;
+using System;
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.Collections;
 
 public class playerCutscene : MonoBehaviour
 {
@@ -6,6 +10,8 @@ public class playerCutscene : MonoBehaviour
     [SerializeField] private playerMovement PM;
     [SerializeField] private ThirdPerson TPC;
     [SerializeField] private GameObject Player;
+    [SerializeField] public GameObject[] extra;
+    //private int currentActiveIndex = 0;
 
     //cutscene
     public GameObject FPC;
@@ -27,5 +33,10 @@ public class playerCutscene : MonoBehaviour
         PM.enabled = false;
         TPC.enabled = false;
         Player.SetActive(false);
+        for (int i = 0; i < extra.Length; i++)
+        {
+            extra[i].SetActive(false);
+        } 
+        
     }
 }
