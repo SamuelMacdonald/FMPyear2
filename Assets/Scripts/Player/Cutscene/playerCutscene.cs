@@ -33,10 +33,14 @@ public class playerCutscene : MonoBehaviour
         PM.enabled = false;
         TPC.enabled = false;
         Player.SetActive(false);
+        
+        
+    }
+    public void DeactExtra()
+    {
         for (int i = 0; i < extra.Length; i++)
         {
             extra[i].SetActive(false);
-        } 
-        
+        }
     }
 }
