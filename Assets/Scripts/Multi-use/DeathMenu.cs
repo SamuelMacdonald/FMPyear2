@@ -20,4 +20,15 @@ public class DeathMenu : MonoBehaviour
         SceneManager.LoadScene(2);
         //Don't forget to update if more scenes are added before it
     }
+
+    public void End()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

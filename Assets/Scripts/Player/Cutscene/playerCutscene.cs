@@ -26,7 +26,9 @@ public class playerCutscene : MonoBehaviour
     {
         PM.enabled = true;
         TPC.enabled = true;
+        CSPC.SetActive(false);
         Player.SetActive(true);
+        
     }
     public void Deactivate()
     {
@@ -41,6 +43,13 @@ public class playerCutscene : MonoBehaviour
         for (int i = 0; i < extra.Length; i++)
         {
             extra[i].SetActive(false);
+        }
+    }
+    public void ActExtra()
+    {
+        for (int i = 0; i < extra.Length; i++)
+        {
+            extra[i].SetActive(true);
         }
     }
 }
