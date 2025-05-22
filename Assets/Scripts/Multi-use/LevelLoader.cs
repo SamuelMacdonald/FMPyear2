@@ -5,6 +5,6 @@ public class LevelLoader : MonoBehaviour
 {
     public void LoadPast()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

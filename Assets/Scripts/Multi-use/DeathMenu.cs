@@ -17,7 +17,7 @@ public class DeathMenu : MonoBehaviour
 
     public void RestartingPresentLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         //Don't forget to update if more scenes are added before it
     }
 
@@ -30,5 +30,9 @@ public class DeathMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
